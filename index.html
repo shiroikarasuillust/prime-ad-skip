@@ -1,1 +1,54 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Prime Video 広告自動早送り — インストール</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Sans", "Noto Sans JP", sans-serif; background: #0f0f1a; color: #eee; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; }
+  .card { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 20px; padding: 48px 40px; max-width: 520px; width: 100%; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .icon { font-size: 56px; margin-bottom: 16px; }
+  h1 { font-size: 22px; font-weight: bold; color: #fff; margin-bottom: 8px; line-height: 1.4; }
+  .version { display: inline-block; background: #2a2a4a; color: #8888cc; font-size: 12px; padding: 3px 10px; border-radius: 20px; margin-bottom: 24px; }
+  .features { background: #12122a; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; text-align: left; }
+  .feature { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 14px; color: #ccc; line-height: 1.5; }
+  .feature:last-child { margin-bottom: 0; }
+  .install-btn { display: block; width: 100%; padding: 18px; background: linear-gradient(135deg, #00c853, #00a040); color: #fff; font-size: 18px; font-weight: bold; border: none; border-radius: 14px; cursor: pointer; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 6px 24px rgba(0,200,83,0.35); margin-bottom: 14px; }
+  .install-btn:hover { transform: translateY(-2px); }
+  .note { font-size: 12px; color: #666; margin-bottom: 28px; line-height: 1.6; }
+  hr { border: none; border-top: 1px solid #2a2a4a; margin: 0 0 24px; }
+  .steps-title { font-size: 13px; color: #888; margin-bottom: 16px; font-weight: bold; text-transform: uppercase; }
+  .steps { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  .step { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: #aaa; line-height: 1.5; }
+  .step-num { background: #2a2a4a; color: #8888cc; font-size: 11px; font-weight: bold; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step a { color: #8888cc; text-decoration: none; }
+  .already { margin-top: 24px; font-size: 12px; color: #555; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">⏩</div>
+  <h1>Amazon Prime Video<br>広告自動早送り</h1>
+  <span class="version">v2.7</span>
+  <div class="features">
+    <div class="feature"><span>🚀</span><span>CM中は自動で <strong style="color:#fff">1600%</strong> に早送り</span></div>
+    <div class="feature"><span>↩️</span><span>CM終了後は元の速度に自動復帰</span></div>
+    <div class="feature"><span>🎛️</span><span>画面のボタンで再生速度を自由に調整（100%〜250%）</span></div>
+    <div class="feature"><span>💾</span><span>設定した速度はブラウザを閉じても記憶</span></div>
+  </div>
+  <a class="install-btn" href="https://gist.github.com/shiroikarasuillust/7fb90773d43651f8215ff182021f9958/raw/amazon-prime-ad-skip.user.js">⬇️ ワンクリックでインストール</a>
+  <p class="note">※ Tampermonkey（無料）が必要です。まだの方は下の手順で先にインストールしてください。</p>
+  <hr>
+  <p class="steps-title">初めての方はこちら</p>
+  <div class="steps">
+    <div class="step"><span class="step-num">1</span><span><a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">Tampermonkeyをインストール</a>（Chrome拡張・無料）</span></div>
+    <div class="step"><span class="step-num">2</span><span>chrome://extensions を開き、デベロッパーモードを ON にする</span></div>
+    <div class="step"><span class="step-num">3</span><span>上の「ワンクリックでインストール」を押す</span></div>
+    <div class="step"><span class="step-num">4</span><span>Tampermonkeyのインストール画面で「インストール」を押す</span></div>
+    <div class="step"><span class="step-num">5</span><span>Amazon Prime Videoを開いて完了 🎉</span></div>
+  </div>
+  <p class="already">Tampermonkey導入済みの方は上のボタンを押すだけです</p>
+</div>
+</body>
+</html>
